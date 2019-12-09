@@ -1,1 +1,37 @@
-<p>profile works!</p>
+<div><h1>Gitsearch</h1>
+    <p class="git">"A search engine for github-accounts. Go ahead and try"</p>
+    <div class="container">
+        <form action="" class="enter">
+            <div class="form-group ">
+                <input type="text" placeholder="Enter github's username" class="form-control " [(ngModel)]="username"
+                    name="username" (keyup)="findProfile()">
+            </div>
+        </form>
+        <div *ngIf="profile">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="img" src="{{profile.avatar_url}}" class="img-fluid" alt="profile">
+                </div>
+                <br>
+                <br>
+                <div class="col-sm-3">
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+                        <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
+                        <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-sm-6">
+                    <div>
+                        <hr>
+                        <p>
+                            <span class="label" class="btn btn-success"> {{profile.followers}} Followers</span>&nbsp;
+    
+                            <span class="label" class="btn btn-info"> {{profile.following}} Following </span>&nbsp;
+    
+                            <span class="label" class="btn btn-primary"> {{profile.public_repos}} Repositories</span>
+                        </p>
+                        <hr>
+                        <hr>
