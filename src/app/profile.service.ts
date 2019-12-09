@@ -9,8 +9,8 @@ import { HttpClient }from '@angular/common/http';
 export class ProfileService {
 
   private username:string;
- private client_id = "";
-  private client_secret ="";
+ private client_id = "9b7de0eb2b0f0a0bae15";
+  private client_secret ="349a7f4cdf273026351c27d56876f2504f8c76b2";
   constructor(private http:HttpClient) { 
     this.username = "justusm10moringaschool";
      }
@@ -22,4 +22,6 @@ export class ProfileService {
     }
      updateProfile(username:string){
     this.username = username;
-  }
+     }
+
+}
