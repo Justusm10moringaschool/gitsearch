@@ -1,4 +1,33 @@
 # Gitsearch
+#  AngularQuotes
+#### This Application creates a platform users can search each others repositories, Sunday December, 01 2019 .
+
+
+#### By Onyancha Justus****&trade;
+
+## Description
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+
+## Project live site
+  This is the live .[ ]()
+
+  ![Image]()
+
+  ## Technologies Used
+* HTML-For Building Mark Up pages
+* CSS-For styling User Interface
+* Bootsrap-For making webpage responsive
+* Angular 8;
+* Typscript
+
+## Behavior Driven Development
+* Run the application on a supported web browser.
+* On the form type in the username of the person to whom you want to search.
+* The Github details of the person you will appear. Their repos will also be available.
+* Also present will be information when the repo was created.
+* To view the repos on github, you will click on the 'view project on github' button and it will direct you to the repo on github.
+* A new tab will open and you will be able to view the repo directly on github.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
