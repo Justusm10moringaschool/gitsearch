@@ -9,14 +9,14 @@ import { FormsModule }from '@angular/forms';
 import { HttpClientModule }from '@angular/common/http';
 import { DateCountPipe } from './date-count.pipe';
 import { HighlightDirective } from './highlight.directive';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { NativeComponent } from './native/native.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     DateCountPipe,
     HighlightDirective,
-    NotFoundComponent
+    NativeComponent
   ],
   imports: [
     BrowserModule,
